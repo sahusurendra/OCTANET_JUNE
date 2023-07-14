@@ -1,0 +1,96 @@
+body {
+  background-color: #9EC7DC ;
+  font-family: Arial, sans-serif;
+}
+
+
+nav{
+  background-color: #9EC7DC;
+  border-bottom:5px double black;
+  
+}
+
+h1{  
+  color: black;
+  text-align: center;
+  font-weight: 500%;
+  font-size: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.task{
+  margin-top: 1%;
+  margin-left: 1%;
+  display:inline-block;  
+}
+
+label{   
+  margin-left: 1%;
+  color: black;
+  font-size: 20px;     
+}
+
+.task input{  
+  border: none;
+  outline: none;
+  border-bottom:  2px solid #042232;
+  background: transparent;
+  color: black;
+  font-size: 15px;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+}
+
+button{
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border:  2px solid #042232;  
+}
+
+button:hover{
+  border-radius: 2%;
+  color: white;
+  padding: 10px;
+  background-color: #042232;
+  border:  2px solid white; 
+}
+
+.add{
+  display: inline-block;
+  margin-left:5%;
+}
+
+table {
+ 
+  width: 100%;
+  background-color: #ddd;
+  border-color: #042232;
+}
+
+th{
+  margin-left: 30%;
+  padding: 6px;
+  padding-bottom: 1%;
+  text-align: left;
+  border-bottom: 1px double black;
+  background-color: #042232;
+  color: white;
+  font-weight: 700;
+  
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(0, 0, 0);
+}
+
+.delete-button {
+  background-color: #042232;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

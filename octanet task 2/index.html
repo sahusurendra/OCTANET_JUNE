@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+  <nav>
+  <h1>To-Do List</h1>
+</nav>
+<br><br>
+  <div class="todo_tasks">
+    <div class="task">
+      <label for="task-title">Title</label>
+      <input type="text" id="task-title" placeholder="Enter task title">
+    </div>
+
+    <div class="task">
+      <label for="task-description">Description</label>
+      <input type="text" id="task-description" placeholder="Enter task description">
+    </div>
+
+    <div class="task">
+      <label for="task-priority">Priority</label>
+      <select id="task-priority">
+        <option  selected="selected">Choose Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+
+    <div class="task">
+      <label for="task-day">Day</label>
+      <select id="task-day" placeholder="Enter task day">
+        <option  selected="selected">Choose Day</option>
+        <option value ="Monday">Monday</option>
+        <option value ="Tuesday">Tuesday</option>
+        <option value ="Wednesday">Wednesday</option>
+        <option value ="Thursday">Thursday</option>
+        <option value ="Friday">Friday</option>
+        <option value ="Saturday">Saturday</option>
+        <option value ="Sunday">Sunday</option>
+      </select>
+    </div>
+
+    <div class="task">
+      <label for="task-date">Date</label>
+      <input type="date" id="task-date">
+    </div>
+
+    <div class="add">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+  <br><br><br>
+
+  <table id="task-list">
+    <thead>
+      <tr>        
+        <th>Title</th>
+        <th>Description</th>
+        <th>Priority</th>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Completed</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>  
+  
+<script src="script.js"></script>
+</body>
+</html>
